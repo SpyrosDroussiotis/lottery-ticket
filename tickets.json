@@ -1,0 +1,92 @@
+[
+  {
+    "draw_id": "DRAW-2026-0625",
+    "player_id": "player-1",
+    "numbers": [4, 12, 17, 25, 33, 41],
+    "stake": 5.00
+  },
+  {
+    "draw_id": "DRAW-2026-0625",
+    "player_id": "player-2",
+    "numbers": [1, 8, 14, 22, 30, 45],
+    "stake": 10.00
+  },
+  {
+    "draw_id": "DRAW-2026-0625",
+    "player_id": "player-3",
+    "numbers": [2, 5, 11, 19, 28, 37],
+    "stake": 2.50
+  },
+  {
+    "draw_id": "DRAW-2026-0625",
+    "player_id": "player-4",
+    "numbers": [7, 15, 23, 31, 39, 44],
+    "stake": 100.00
+  },
+  {
+    "draw_id": "DRAW-2026-0625",
+    "player_id": "player-5",
+    "numbers": [3, 9, 18, 27, 36, 42],
+    "stake": 1.00
+  },
+  {
+    "draw_id": "DRAW-2026-0626",
+    "player_id": "player-6",
+    "numbers": [6, 13, 20, 29, 35, 43],
+    "stake": 25.00
+  },
+  {
+    "draw_id": "DRAW-2026-0625",
+    "player_id": "",
+    "numbers": [1, 2, 3, 4, 5, 6],
+    "stake": 5.00
+  },
+  {
+    "draw_id": "DRAW-2026-0625",
+    "player_id": "player-8",
+    "numbers": [1, 2, 3, 4, 5],
+    "stake": 5.00
+  },
+  {
+    "draw_id": "DRAW-2026-0625",
+    "player_id": "player-9",
+    "numbers": [1, 2, 3, 4, 5, 50],
+    "stake": 5.00
+  },
+  {
+    "draw_id": "DRAW-2026-0625",
+    "player_id": "player-10",
+    "numbers": [1, 2, 3, 3, 5, 6],
+    "stake": 5.00
+  },
+  {
+    "draw_id": "DRAW-2026-0625",
+    "player_id": "player-11",
+    "numbers": [4, 12, 17, 25, 33, 41],
+    "stake": 0.50
+  },
+  {
+    "draw_id": "DRAW-2026-0625",
+    "player_id": "player-12",
+    "numbers": [4, 12, 17, 25, 33, 41],
+    "stake": 501.00
+  },
+  {
+    "draw_id": "",
+    "player_id": "player-13",
+    "numbers": [4, 12, 17, 25, 33, 41],
+    "stake": 5.00
+  },
+  {
+    "draw_id": "DRAW-2026-0625",
+    "player_id": "player-14",
+    "numbers": [10, 20, 30, 35, 40, 45],
+    "stake": 50.00
+  },
+  {
+    "draw_id": "DRAW-2026-0625",
+    "player_id": "player-15",
+    "numbers": [1, 7, 14, 21, 28, 35],
+    "stake": 7.50
+  }
+]

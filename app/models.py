@@ -38,7 +38,7 @@ class TicketSubmission(BaseModel):
             
         return value
     
-class StoredTicket(BaseModel):
+class StoredTicket(TicketSubmission):
     ticket_id: str
     submitted_at: datetime
     

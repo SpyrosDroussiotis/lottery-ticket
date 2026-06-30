@@ -19,13 +19,13 @@ def process_batch(tickets: list[dict])->dict:
             invalid+=1
             errors.append({
                 "index":index,
-                "erros": [err["msg"] for err in errors()],
+                "errors": [err["msg"] for err in error.errors()],
             })
             
-        return {
-            "total_submitted":total_submitted,
-            "valid":valid,
-            "invalid":invalid,
-            "total_stake": total_stake,
-            "errors":errors
-        }
+    return {
+        "total_submitted":total_submitted,
+        "valid":valid,
+        "invalid":invalid,
+        "total_stake": total_stake,
+        "errors":errors
+    }
