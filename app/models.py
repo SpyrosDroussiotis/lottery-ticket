@@ -42,5 +42,8 @@ class StoredTicket(TicketSubmission):
     ticket_id: str
     submitted_at: datetime
     
+class TicketResult(StoredTicket):
+    matched_numbers: int
+    prize_tier: str
 
     

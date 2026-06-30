@@ -1,0 +1,6 @@
+venv/
+__pycahce__/
+.pytest_cache/
+.git/
+.vscode/
+.idea/

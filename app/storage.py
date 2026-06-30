@@ -20,3 +20,11 @@ def store_ticket(ticket: TicketSubmission) -> StoredTicket:
 
 def get_tickets_by_draw(draw_id: str) -> list[StoredTicket]:
     return [ticket for ticket in tickets if ticket.draw_id == draw_id]
+
+def ticket_exists(ticket: TicketSubmission) -> bool:
+    return any(
+        store_ticket.draw_id == ticket.draw_id
+        and store_ticket.player_id == ticket.player_id
+        and store_ticket.numbers == ticket.numbers
+        for store_ticket in tickets
+    )
