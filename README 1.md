@@ -220,9 +220,13 @@ app/
 ├── batch.py
 ├── results.py
 └── logs.py
+
 tests/
+
 tickets.json
+
 Dockerfile
+
 requirements.txt
 
 ## Installation
