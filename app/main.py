@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException, status
+
 from app.models import StoredTicket, TicketSubmission, TicketResult
 from app.services import validate_ticket
 from app.storage import store_ticket, get_tickets_by_draw, ticket_exists
@@ -6,6 +7,7 @@ from app.logs import log_submission
 from app.results import calculate_results
 
 app = FastAPI()
+
 
 @app.get("/")
 def home():
@@ -34,7 +36,7 @@ async def create_ticket(ticket: TicketSubmission):
         
     stored_ticket = store_ticket(ticket)
     log_submission(ticket.player_id, ticket.draw_id, "accepted")
-    return store_ticket(ticket)
+    return stored_ticket
 
 @app.get("/tickets", response_model=list[StoredTicket])
 def list_tickets(draw_id: str):

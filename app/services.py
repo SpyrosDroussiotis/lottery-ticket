@@ -9,7 +9,7 @@ async def check_draw_open(draw_id: str) -> bool:
     return True
 
 async def validate_ticket(player_id: str, draw_id: str) -> bool:
-    player_eligible, draw_open = await asyncio.gather(
+    draw_open, player_eligible = await asyncio.gather(
         check_draw_open(draw_id),
         check_player_eligible(player_id),
     )

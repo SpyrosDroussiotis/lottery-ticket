@@ -1,11 +1,14 @@
-from pydantic import BaseModel, Field, field_validator 
 from datetime import datetime
+
+from pydantic import BaseModel, Field, field_validator 
+
+
 
 class TicketSubmission(BaseModel):
     draw_id: str
     player_id: str
     numbers: list[int]
-    stake: float = Field(..., ge=1.0 , le=500.0)
+    stake: float = Field(..., ge=1.0, le=500.0)
     
     @field_validator("draw_id")
     @classmethod
@@ -34,7 +37,7 @@ class TicketSubmission(BaseModel):
         
         for number in value:
             if number < 1 or number > 45:
-                raise ValueError ("Numbers must be between 1 and 45")
+                raise ValueError("Numbers must be between 1 and 45")
             
         return value
     

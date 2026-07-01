@@ -1,9 +1,11 @@
 import json
 from pathlib import Path
+
 from app.batch import process_batch
 
+
 def test_process_batch_with_ticket_json():
-    file_path= Path("tickets.json")
+    file_path = Path("tickets.json")
     
     with file_path.open("r") as file:
         tickets=json.load(file)

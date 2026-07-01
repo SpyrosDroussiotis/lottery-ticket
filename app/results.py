@@ -1,5 +1,6 @@
 from app.models import StoredTicket, TicketResult
 
+
 def calculate_results(tickets: list[StoredTicket], winning_numbers: list[int]) -> list[TicketResult]:
     results = []
     

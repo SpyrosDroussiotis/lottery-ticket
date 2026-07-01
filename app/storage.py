@@ -1,8 +1,10 @@
 from datetime import datetime, UTC
 from uuid import uuid4
+
 from app.models import TicketSubmission, StoredTicket
 
 tickets: list[StoredTicket] = []
+
 
 def store_ticket(ticket: TicketSubmission) -> StoredTicket:
     stored_ticket = StoredTicket(
@@ -23,8 +25,8 @@ def get_tickets_by_draw(draw_id: str) -> list[StoredTicket]:
 
 def ticket_exists(ticket: TicketSubmission) -> bool:
     return any(
-        store_ticket.draw_id == ticket.draw_id
-        and store_ticket.player_id == ticket.player_id
-        and store_ticket.numbers == ticket.numbers
-        for store_ticket in tickets
+        store_ticketd.draw_id == ticket.draw_id
+        and store_ticketd.player_id == ticket.player_id
+        and store_ticketd.numbers == ticket.numbers
+        for store_ticketd in tickets
     )

@@ -1,12 +1,12 @@
 from pydantic import ValidationError
-
 from app.models import TicketSubmission
+
 
 def process_batch(tickets: list[dict])->dict:
     total_submitted = len(tickets)
     valid = 0
     invalid = 0
-    total_stake = 0
+    total_stake = 0.0
     errors = []
     
     for index, ticket_data in enumerate(tickets):
@@ -16,9 +16,9 @@ def process_batch(tickets: list[dict])->dict:
             total_stake += ticket.stake
             
         except ValidationError as error:
-            invalid+=1
+            invalid += 1
             errors.append({
-                "index":index,
+                "index": index,
                 "errors": [err["msg"] for err in error.errors()],
             })
             
