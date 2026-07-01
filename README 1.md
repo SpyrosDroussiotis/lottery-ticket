@@ -212,13 +212,21 @@ simply an opportunity to discuss your ideas together, not a test.
 ## Project Structure
 
 app/
+
 │
+
 ├── main.py
+
 ├── models.py
+
 ├── storage.py
+
 ├── services.py
+
 ├── batch.py
+
 ├── results.py
+
 └── logs.py
 
 tests/
